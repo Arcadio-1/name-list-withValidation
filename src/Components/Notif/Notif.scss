@@ -1,0 +1,50 @@
+.notif-back {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000000a7;
+  height: 100vh;
+  width: 100vw;
+}
+
+.notif-window {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: antiquewhite;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 200px;
+  z-index: 20;
+  header {
+    border-radius: 10px 10px 0px 0px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 0px 0px 5px #333;
+    padding: 0.3rem 0.5rem;
+    color: snow;
+    background-color: rgb(226, 43, 104);
+  }
+  section {
+    font-size: 1.3rem;
+    padding: 0.3rem 0.5rem;
+  }
+  footer {
+    padding: 1rem;
+    button {
+      cursor: pointer;
+      text-shadow: 0px 0px 5px #333;
+      display: block;
+      margin-left: auto;
+      margin-top: 1rem;
+      font-size: 1rem;
+      border: transparent;
+      color: snow;
+      background-color: rgb(165, 42, 42);
+      padding: 0.3rem 2rem;
+      border-radius: 5px;
+      border: 2px solid #fff;
+    }
+  }
+}

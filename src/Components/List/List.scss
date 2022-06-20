@@ -1,0 +1,14 @@
+@import "../sass-mixin";
+.list {
+  list-style: none;
+  @include card(#309272);
+  li {
+    border-radius: 5px;
+    background-color: rgba(73, 70, 70, 0.659);
+    margin-top: 0.8rem;
+    font-size: 1.3rem;
+    color: snow;
+    padding: 0.3rem 3rem;
+    cursor: pointer;
+  }
+}

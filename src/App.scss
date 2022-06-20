@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: slategray;
+}
+
+.container {
+  text-transform: capitalize;
+  width: 95vw;
+  max-width: 500px;
+  margin: 0 auto;
+}

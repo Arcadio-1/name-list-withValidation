@@ -1,0 +1,68 @@
+@mixin responsive($breakPoint) {
+  @if ($breakPoint == xl) {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if ($breakPoint == lg) {
+    @media (max-width: 1000px) {
+      @content;
+    }
+  }
+  @if ($breakPoint == md) {
+    @media (max-width: 760px) {
+      @content;
+    }
+  }
+  @if ($breakPoint == sm) {
+    @media (max-width: 560px) {
+      @content;
+    }
+  }
+  @if ($breakPoint == xs) {
+    @media (max-width: 400px) {
+      @content;
+    }
+  }
+}
+html {
+  font-size: 62.5%;
+  @include responsive(lg) {
+    font-size: 58.25%;
+  }
+  @include responsive(md) {
+    font-size: 56.25%;
+  }
+  @include responsive(sm) {
+    font-size: 50%;
+  }
+  @include responsive(xs) {
+    font-size: 45%;
+  }
+}
+
+@mixin card($color: snow) {
+  margin-top: 1rem;
+  padding: 1.5rem 2rem;
+  width: 100%;
+  border-radius: 10px;
+  background-color: $color;
+}
+@mixin btn($bgColor: #1f1f1f, $fontColor: snow) {
+  cursor: pointer;
+  text-shadow: 0px 0px 5px #333;
+  display: block;
+  margin-left: auto;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  border: transparent;
+  color: $fontColor;
+  background-color: $bgColor;
+  padding: 0.3rem 3rem;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  @include responsive(sm) {
+    font-size: 1rem;
+    padding: 0.2rem 1.5rem;
+  }
+}
